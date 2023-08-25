@@ -1,0 +1,7 @@
+@media (max-width: 690px) {
+  .header__user_opened {
+    visibility: visible;
+    padding-top: 15px;
+    border-bottom: 1px solid rgba(84, 84, 84, .7);
+  }
+}

@@ -1,0 +1,14 @@
+.authorization__field {
+  width: 100%;
+  color: #CCCCCC;
+  border: 0;
+  border-bottom: 2px solid #CCCCCC;
+  background-color: #000000;
+  padding: 0 0 8px 0;
+  font-size: 14px;
+  line-height: 1.22;
+}
+
+.authorization__field:last-of-type {
+  margin: 30px auto 216px;
+}

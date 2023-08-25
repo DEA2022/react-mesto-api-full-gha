@@ -1,0 +1,6 @@
+@media (max-width: 690px) {
+  .header_opened {
+    padding: 144px 0 30px;
+    position: relative;
+  }
+}

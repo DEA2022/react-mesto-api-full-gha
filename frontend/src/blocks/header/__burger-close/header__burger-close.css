@@ -1,0 +1,25 @@
+.header__burger-close {
+  visibility: hidden;
+  width: 20px;
+  height: 20px;
+  background-size: 100%;
+  background-image: url(../../../images/closeicon.svg);
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0);
+  background-position: 50%;
+  border: 0;
+  padding: 0;
+  margin-right: 30px;
+}
+
+.header__burger-close:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+@media (max-width: 690px) {
+  .header__burger-close {
+    visibility: visible;
+  }
+}
+

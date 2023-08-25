@@ -1,0 +1,17 @@
+.profile__common {
+  max-width: 336px;
+  margin-left: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+@media (max-width: 502px) {
+  .profile__common {
+    max-width: 282px;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+    margin: 0;
+  }
+}

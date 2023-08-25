@@ -1,0 +1,9 @@
+.page__photo {
+  margin: 0 auto 66px;
+}
+
+@media (max-width: 502px) {
+  .page__photo {
+    margin: 0 auto 48px;
+  }
+}

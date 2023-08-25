@@ -1,0 +1,8 @@
+.photo__wrap {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 246px;
+  min-height: 79px;
+}

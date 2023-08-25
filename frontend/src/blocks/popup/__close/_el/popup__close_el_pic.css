@@ -1,0 +1,13 @@
+.popup__close_el_pic {
+  position: absolute;
+  top: -38px;
+  right: -45px;
+}
+
+@media (max-width: 690px) {
+  .popup__close_el_pic {
+   top: -35px;
+   right: -5px;
+   transform: translate(-35%, -5%);
+  }
+}
