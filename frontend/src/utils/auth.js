@@ -1,4 +1,4 @@
-const baseUrl = 'http://localhost:3000';
+const baseUrl = 'http://api.danilova48.nomoredomainsicu.ru';
 
 function getResponseData(res) {
   if (!res.ok) {
