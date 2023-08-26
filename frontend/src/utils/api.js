@@ -106,7 +106,7 @@ class Api {
 }
 
 export const api = new Api({
-  baseUrl: 'http://api.danilova48.nomoredomainsicu.ru',
+  baseUrl: 'api.danilova48.nomoredomainsicu.ru',
 })
 
 
