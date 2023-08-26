@@ -1,4 +1,4 @@
-const baseUrl = 'api.danilova48.nomoredomainsicu.ru';
+const baseUrl = 'https://api.danilova48.nomoredomainsicu.ru';
 
 function getResponseData(res) {
   if (!res.ok) {
