@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
 const { errors } = require('celebrate');
@@ -23,10 +24,18 @@ const limiter = rateLimit({
   max: 100,
 });
 app.use(requestLogger);
+
 app.use(limiter);
 
 app.use(helmet());
 app.use(express.json());
+
+app.get('/crash-test', () => {
+  setTimeout(() => {
+    throw new Error('Сервер сейчас упадёт');
+  }, 0);
+});
+
 app.use('/', router);
 
 app.use(errorLogger);

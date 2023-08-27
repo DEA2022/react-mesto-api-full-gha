@@ -2,6 +2,8 @@ const errorConstants = require('http2').constants;
 const mongoose = require('mongoose');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
+
+const { JWT_SECRET } = process.env;
 const User = require('../models/user');
 const ConflictError = require('../errors/ConflictError');
 const BadRequestError = require('../errors/BadRequestError');
@@ -91,7 +93,7 @@ module.exports.login = (req, res, next) => {
   const { email, password } = req.body;
   return User.findUserByCredentials(email, password)
     .then((user) => {
-      const token = jwt.sign({ _id: user._id }, 'some-jwt-key');
+      const token = jwt.sign({ _id: user._id }, JWT_SECRET);
       return res.send({ token });
     })
     .catch(next);
