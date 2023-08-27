@@ -9,7 +9,7 @@ const router = require('./routes/index');
 const handlerErrors = require('./middlewares/handlerErrors');
 const { requestLogger, errorLogger } = require('./middlewares/logger');
 
-const { PORT = 3000, MESTO_DB = 'mongodb://127.0.0.1:27017/mestodb' } = process.env;
+const { PORT = 3000, MESTO_DB } = process.env;
 
 mongoose.connect(MESTO_DB, {
   useNewUrlParser: true,
