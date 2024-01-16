@@ -31,3 +31,5 @@ IP 51.250.96.61
 Frontend https://front.danilova48.nomoredomainsicu.ru
 
 Backend https://api.danilova48.nomoredomainsicu.ru
+
+Перед переходом по ссылке не забудьте запустить сервер.
